@@ -35,13 +35,18 @@
 
     // Fade in elements on scroll
     function fadeInOnScroll() {
-        $('.fade-in').each(function() {
-            var top = $(this).offset().top;
+        var selectors = '.fade-in, ._aos-animate, .service-card-modern, .package-card-modern, .tour-modern-card, .packages-item, .testimonial-card';
+        $(selectors).each(function () {
+            var el = $(this);
+            if (el.data('aos-animated') === true) {
+                return;
+            }
+            var top = el.offset().top;
             var scroll = $(window).scrollTop();
-            var height = $(this).outerHeight();
+            var height = el.outerHeight();
             var windowHeight = $(window).height();
-            if (scroll + windowHeight > top + height/4) {
-                $(this).addClass('animate-fade-up');
+            if (scroll + windowHeight > top + height / 4) {
+                el.addClass('animate-fade-up').data('aos-animated', true);
             }
         });
     }
