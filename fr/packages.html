@@ -3,260 +3,190 @@
 
     <head>
         <meta charset="utf-8">
-        <title>Travela - Modèle de site Web touristique</title>
+        <title>Forfaits de voyage - Rapture Holidays LLP</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="Agence de voyage moderne, Réservation de circuits, Voyages d'aventure" name="keywords">
-        <meta content="Découvrez des voyages exceptionnels avec Rapture Holidays LLP - Votre porte vers des aventures inoubliables à travers le monde" name="description">
+        <meta content="Agence de voyage moderne, Réservation de circuits, Forfaits de voyage" name="keywords">
+        <meta content="Découvrez nos forfaits de voyage exceptionnels - Venise, Californie, Japon, Thaïlande et bien plus encore" name="description">
 
-        <!-- Google Web Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600&family=Roboto&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600&family=Roboto&display=swap" rel="stylesheet">
 
-        <!-- Icon Font Stylesheet -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        <!-- Libraries Stylesheet -->
         <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
         <link href="../lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-
-
-        <!-- Customized Bootstrap Stylesheet -->
         <link href="../css/bootstrap.min.css" rel="stylesheet">
-
-        <!-- Template Stylesheet -->
         <link href="../css/style.css" rel="stylesheet">
     </head>
 
     <body>
 
-        <!-- Spinner Start -->
         <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
             <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
                 <span class="sr-only">Loading...</span>
             </div>
         </div>
-        <!-- Spinner End -->
 
-        <!-- Topbar Start -->
-        <div class="container-fluid bg-primary px-5 d-none d-lg-block">
-            <div class="row gx-0">
-                <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
-                    <div class="d-inline-flex align-items-center" style="height: 45px;">
-                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-twitter fw-normal"></i></a>
-                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-facebook-f fw-normal"></i></a>
-                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-linkedin-in fw-normal"></i></a>
-                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-instagram fw-normal"></i></a>
-                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href=""><i class="fab fa-youtube fw-normal"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-4 text-center text-lg-end">
-                    <div class="d-inline-flex align-items-center" style="height: 45px;">
-                        <a href="#"><small class="me-3 text-light"><i class="fa fa-user me-2"></i>Register</small></a>
-                        <a href="../index.html" class="me-3 text-light small-lang-switch"><small><i class="fa fa-sign-in-alt me-2"></i>English</small></a><a href="#" class="active me-3 text-light small-lang-switch"><small><i class="fa fa-sign-in-alt me-2"></i>Français</small></a>
-                        <div class="dropdown">
-                            <a href="#" class="dropdown-toggle text-light" data-bs-toggle="dropdown"><small><i class="fa fa-home me-2"></i> My Dashboard</small></a>
-                            <div class="dropdown-menu rounded">
-                                <a href="#" class="dropdown-item"><i class="fas fa-user-alt me-2"></i> My Profile</a>
-                                <a href="#" class="dropdown-item"><i class="fas fa-comment-alt me-2"></i> Inbox</a>
-                                <a href="#" class="dropdown-item"><i class="fas fa-bell me-2"></i> Notifications</a>
-                                <a href="#" class="dropdown-item"><i class="fas fa-cog me-2"></i> Account Settings</a>
-                                <a href="#" class="dropdown-item"><i class="fas fa-power-off me-2"></i> Log Out</a>
+        <div class="container-fluid position-relative p-0 hero-static" data-aos="fade-in">
+            <nav class="navbar navbar-expand-lg navbar-modern-sticky px-4 px-lg-5 py-2 py-lg-3">
+                <div class="container-fluid">
+                    <a href="fr/index.html" class="navbar-brand p-0">
+                        <img src="../img/Rapture%20Holidays%20%20%20LOGO%20%20.png" class="navbar-logo-enlarged" alt="Rapture Holidays Logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav ms-auto py-0">
+                            <a href="fr/index.html" class="nav-item nav-link">Accueil</a>
+                            <a href="fr/about.html" class="nav-item nav-link">À propos</a>
+                            <a href="fr/services.html" class="nav-item nav-link">Services</a>
+                            <a href="fr/packages.html" class="nav-item nav-link active">Forfaits</a>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                                <div class="dropdown-menu m-0">
+                                    <a href="fr/destination.html" class="dropdown-item">Destinations</a>
+                                    <a href="fr/tour.html" class="dropdown-item">Explorer</a>
+                                    <a href="fr/booking.html" class="dropdown-item">Réservation</a>
+                                    <a href="fr/gallery.html" class="dropdown-item">Galerie</a>
+                                    <a href="fr/guides.html" class="dropdown-item">Guides</a>
+                                    <a href="fr/testimonial.html" class="dropdown-item">Témoignages</a>
+                                    <a href="fr/404.html" class="dropdown-item">404</a>
+                                </div>
                             </div>
+                            <a href="fr/contact.html" class="nav-item nav-link">Contact</a>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <!-- Topbar End -->
-
-        <!-- Navbar & Hero Start -->
-        <div class="container-fluid position-relative p-0">
-            <nav class="navbar navbar-expand-lg navbar-light navbar-modern px-4 px-lg-5 py-3 py-lg-0">
-                <a href="fr/index.html" class="navbar-brand p-0">
-                    <img src="../img/Rapture%20Holidays%20%20%20LOGO%20%20.png" class="navbar-logo" alt="Rapture Holidays Logo">
-
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="fa fa-bars"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto py-0">
-                        <a href="fr/index.html" class="nav-item nav-link">Accueil</a>
-                        <a href="fr/about.html" class="nav-item nav-link">À propos</a>
-                        <a href="fr/services.html" class="nav-item nav-link">Services</a>
-                        <a href="fr/packages.html" class="nav-item nav-link active">Packages</a>
-                        <a href="fr/blog.html" class="nav-item nav-link">Blog</a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                            <div class="dropdown-menu m-0">
-                                <a href="fr/destination.html" class="dropdown-item">Destination</a>
-                                <a href="fr/tour.html" class="dropdown-item">Explore Tour</a>
-                                <a href="fr/booking.html" class="dropdown-item">Travel Booking</a>
-                                <a href="fr/gallery.html" class="dropdown-item">Our Gallery</a>
-                                <a href="fr/guides.html" class="dropdown-item">Travel Guides</a>
-                                <a href="fr/testimonial.html" class="dropdown-item">Testimonial</a>
-                                <a href="fr/404.html" class="dropdown-item">404 Page</a>
-                            </div>
-                        </div>
-                        <a href="fr/contact.html" class="nav-item nav-link">Contact</a>
-                    </div>
-                    <a href="" class="btn btn-primary rounded-pill py-2 px-4 ms-lg-4">Réserver</a>
                 </div>
             </nav>
-        </div>
-        <!-- Navbar & Hero End -->
 
-        <!-- Header Start -->
-        <div class="container-fluid bg-breadcrumb">
-            <div class="container text-center py-5" style="max-width: 900px;">
-                <h3 class="text-white display-3 mb-4">Travel Packages</h1>
-                <ol class="breadcrumb justify-content-center mb-0">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                    <li class="breadcrumb-item active text-white">Packages</li>
-                </ol>    
+            <div class="hero-static-inner">
+                <img src="../img/carousel-2.jpg" class="img-fluid" alt="Forfaits de voyage">
+                <div class="hero-static-overlay"></div>
+                <div class="hero-static-content text-center">
+                    <span class="hero-eyebrow">Forfaits Premium</span>
+                    <h1 class="display-3 text-capitalize text-white mb-4 hero-title">Forfaits de voyage d'exception</h1>
+                    <p class="mb-5 fs-5 text-white">Des escapades romantiques, des aventures exotiques et des séjours inoubliables à prix doux.</p>
+                    <a class="btn btn-light btn-modern btn-lg rounded-pill text-primary fw-semibold py-3 px-5 hero-btn-secondary" href="#forfaits">Voir les forfaits</a>
+                </div>
             </div>
         </div>
-        <!-- Header End -->
 
-        <!-- Packages Start -->
-        <div class="container-fluid packages py-5">
+        <div class="container-fluid packages py-5" id="forfaits">
             <div class="container py-5">
-                <div class="mx-auto text-center mb-5" style="max-width: 900px;">
-                    <h5 class="section-title px-3">Packages</h5>
-                    <h1 class="mb-0">Awesome Packages</h1>
+                <div class="mx-auto text-center mb-5" style="max-width: 900px;" data-aos="fade-up">
+                    <h5 class="section-title px-3 section-title-modern">Forfaits</h5>
+                    <h1 class="mb-0">Nos forfaits coups de cœur</h1>
+                    <p class="text-muted mt-3">Sélectionnés avec soin pour tous les types de voyageurs.</p>
                 </div>
-                <div class="packages-carousel owl-carousel">
-                    <div class="packages-item">
-                        <div class="packages-img">
-                            <img src="../img/packages-4.jpg" class="img-fluid w-100 rounded-top" alt="Image">
-                            <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute" style="width: 100%; bottom: 0; left: 0; z-index: 5;">
-                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt me-2"></i>Venice - Italy</small>
-                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt me-2"></i>3 days</small>
-                                <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>2 Person</small>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-6 col-xl-3" data-aos="fade-up" data-aos-delay="80">
+                        <div class="package-card-modern h-100">
+                            <div class="package-image-wrapper">
+                                <img src="../img/packages-4.jpg" alt="Venise Italie">
+                                <div class="package-badge">Populaire</div>
                             </div>
-                            <div class="packages-price py-2 px-4">$349.00</div>
-                        </div>
-                        <div class="packages-content bg-light">
-                            <div class="p-4 pb-0">
-                                <h5 class="mb-0">Venice - Italy</h5>
-                                <small class="text-uppercase">Hotel Deals</small>
-                                <div class="mb-3">
-                                    <small class="fa fa-star text-primary"></small>
-                                    <small class="fa fa-star text-primary"></small>
-                                    <small class="fa fa-star text-primary"></small>
-                                    <small class="fa fa-star text-primary"></small>
-                                    <small class="fa fa-star text-primary"></small>
+                            <div class="package-body">
+                                <div class="package-meta">
+                                    <span class="meta-item"><i class="fa fa-map-marker-alt"></i> Venise - Italie</span>
+                                    <span class="meta-item"><i class="fa fa-calendar-alt"></i> 3 jours</span>
+                                    <span class="meta-item"><i class="fa fa-user"></i> 2 pers.</span>
                                 </div>
-                                <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt nemo quia quae illum aperiam fugiat voluptatem repellat</p>
-                            </div>
-                            <div class="row bg-primary rounded-bottom mx-0">
-                                <div class="col-6 text-start px-0">
-                                    <a href="#" class="btn-hover btn text-white py-2 px-4">En savoir plus</a>
+                                <h5 class="package-title">Venise - Italie</h5>
+                                <small class="text-uppercase">Offres hôtelières</small>
+                                <div class="package-rating">
+                                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
                                 </div>
-                                <div class="col-6 text-end px-0">
-                                    <a href="#" class="btn-hover btn text-white py-2 px-4">Réserver</a>
+                                <p class="package-desc">Canaux romantiques, places historiques et cuisine italienne inoubliable vous attendent.</p>
+                                <div class="package-footer">
+                                    <div class="package-price">
+                                        <span class="amount">349 $</span>
+                                    </div>
+                                    <a href="#" class="btn btn-book-modern">Réserver</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="packages-item">
-                        <div class="packages-img">
-                            <img src="../img/packages-2.jpg" class="img-fluid w-100 rounded-top" alt="Image">
-                            <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute" style="width: 100%; bottom: 0; left: 0; z-index: 5;">
-                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt me-2"></i>Venice - Italy</small>
-                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt me-2"></i>3 days</small>
-                                <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>2 Person</small>
+                    <div class="col-md-6 col-lg-6 col-xl-3" data-aos="fade-up" data-aos-delay="160">
+                        <div class="package-card-modern h-100">
+                            <div class="package-image-wrapper">
+                                <img src="../img/packages-2.jpg" alt="La Nouvelle Californie">
+                                <div class="package-badge">Tendance</div>
                             </div>
-                            <div class="packages-price py-2 px-4">$449.00</div>
-                        </div>
-                        <div class="packages-content bg-light">
-                            <div class="p-4 pb-0">
-                                <h5 class="mb-0">The New California</h5>
-                                <small class="text-uppercase">Hotel Deals</small>
-                                <div class="mb-3">
-                                    <small class="fa fa-star text-primary"></small>
-                                    <small class="fa fa-star text-primary"></small>
-                                    <small class="fa fa-star text-primary"></small>
-                                    <small class="fa fa-star text-primary"></small>
-                                    <small class="fa fa-star text-primary"></small>
+                            <div class="package-body">
+                                <div class="package-meta">
+                                    <span class="meta-item"><i class="fa fa-map-marker-alt"></i> Californie, USA</span>
+                                    <span class="meta-item"><i class="fa fa-calendar-alt"></i> 5 jours</span>
+                                    <span class="meta-item"><i class="fa fa-user"></i> 2 pers.</span>
                                 </div>
-                                <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt nemo quia quae illum aperiam fugiat voluptatem repellat</p>
-                            </div>
-                            <div class="row bg-primary rounded-bottom mx-0">
-                                <div class="col-6 text-start px-0">
-                                    <a href="#" class="btn-hover btn text-white py-2 px-4">En savoir plus</a>
+                                <h5 class="package-title">La Nouvelle Californie</h5>
+                                <small class="text-uppercase">Offres hôtelières</small>
+                                <div class="package-rating">
+                                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
                                 </div>
-                                <div class="col-6 text-end px-0">
-                                    <a href="#" class="btn-hover btn text-white py-2 px-4">Réserver</a>
+                                <p class="package-desc">Plages dorées, routes panoramiques et villes dynamiques à découvrir sans modération.</p>
+                                <div class="package-footer">
+                                    <div class="package-price">
+                                        <span class="amount">449 $</span>
+                                    </div>
+                                    <a href="#" class="btn btn-book-modern">Réserver</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="packages-item">
-                        <div class="packages-img">
-                            <img src="../img/packages-3.jpg" class="img-fluid w-100 rounded-top" alt="Image">
-                            <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute" style="width: 100%; bottom: 0; left: 0; z-index: 5;">
-                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt me-2"></i>Venice - Italy</small>
-                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt me-2"></i>3 days</small>
-                                <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>2 Person</small>
+                    <div class="col-md-6 col-lg-6 col-xl-3" data-aos="fade-up" data-aos-delay="240">
+                        <div class="package-card-modern h-100">
+                            <div class="package-image-wrapper">
+                                <img src="../img/packages-3.jpg" alt="Découvrir le Japon">
+                                <div class="package-badge">Meilleur rapport</div>
                             </div>
-                            <div class="packages-price py-2 px-4">$549.00</div>
-                        </div>
-                        <div class="packages-content bg-light">
-                            <div class="p-4 pb-0">
-                                <h5 class="mb-0">Discover Japan</h5>
-                                <small class="text-uppercase">Hotel Deals</small>
-                                <div class="mb-3">
-                                    <small class="fa fa-star text-primary"></small>
-                                    <small class="fa fa-star text-primary"></small>
-                                    <small class="fa fa-star text-primary"></small>
-                                    <small class="fa fa-star text-primary"></small>
-                                    <small class="fa fa-star text-primary"></small>
+                            <div class="package-body">
+                                <div class="package-meta">
+                                    <span class="meta-item"><i class="fa fa-map-marker-alt"></i> Tokyo, Japon</span>
+                                    <span class="meta-item"><i class="fa fa-calendar-alt"></i> 7 jours</span>
+                                    <span class="meta-item"><i class="fa fa-user"></i> 2 pers.</span>
                                 </div>
-                                <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt nemo quia quae illum aperiam fugiat voluptatem repellat</p>
-                            </div>
-                            <div class="row bg-primary rounded-bottom mx-0">
-                                <div class="col-6 text-start px-0">
-                                    <a href="#" class="btn-hover btn text-white py-2 px-4">En savoir plus</a>
+                                <h5 class="package-title">Découvrir le Japon</h5>
+                                <small class="text-uppercase">Offres hôtelières</small>
+                                <div class="package-rating">
+                                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
                                 </div>
-                                <div class="col-6 text-end px-0">
-                                    <a href="#" class="btn-hover btn text-white py-2 px-4">Réserver</a>
+                                <p class="package-desc">Temples ancestraux, villes futuristes et jardins sereins pour un voyage unique.</p>
+                                <div class="package-footer">
+                                    <div class="package-price">
+                                        <span class="amount">549 $</span>
+                                    </div>
+                                    <a href="#" class="btn btn-book-modern">Réserver</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="packages-item">
-                        <div class="packages-img">
-                            <img src="../img/packages-1.jpg" class="img-fluid w-100 rounded-top" alt="Image">
-                            <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute" style="width: 100%; bottom: 0; left: 0; z-index: 5;">
-                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt me-2"></i>Thayland</small>
-                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt me-2"></i>3 days</small>
-                                <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>2 Person</small>
+                    <div class="col-md-6 col-lg-6 col-xl-3" data-aos="fade-up" data-aos-delay="320">
+                        <div class="package-card-modern h-100">
+                            <div class="package-image-wrapper">
+                                <img src="../img/packages-1.jpg" alt="Voyage en Thaïlande">
+                                <div class="package-badge">Promo</div>
                             </div>
-                            <div class="packages-price py-2 px-4">$649.00</div>
-                        </div>
-                        <div class="packages-content bg-light">
-                            <div class="p-4 pb-0">
-                                <h5 class="mb-0">Thayland Trip</h5>
-                                <small class="text-uppercase">Hotel Deals</small>
-                                <div class="mb-3">
-                                    <small class="fa fa-star text-primary"></small>
-                                    <small class="fa fa-star text-primary"></small>
-                                    <small class="fa fa-star text-primary"></small>
-                                    <small class="fa fa-star text-primary"></small>
-                                    <small class="fa fa-star text-primary"></small>
+                            <div class="package-body">
+                                <div class="package-meta">
+                                    <span class="meta-item"><i class="fa fa-map-marker-alt"></i> Bangkok, Thaïlande</span>
+                                    <span class="meta-item"><i class="fa fa-calendar-alt"></i> 5 jours</span>
+                                    <span class="meta-item"><i class="fa fa-user"></i> 2 pers.</span>
                                 </div>
-                                <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt nemo quia quae illum aperiam fugiat voluptatem repellat</p>
-                            </div>
-                            <div class="row bg-primary rounded-bottom mx-0">
-                                <div class="col-6 text-start px-0">
-                                    <a href="#" class="btn-hover btn text-white py-2 px-4">En savoir plus</a>
+                                <h5 class="package-title">Voyage en Thaïlande</h5>
+                                <small class="text-uppercase">Offres hôtelières</small>
+                                <div class="package-rating">
+                                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
                                 </div>
-                                <div class="col-6 text-end px-0">
-                                    <a href="#" class="btn-hover btn text-white py-2 px-4">Réserver</a>
+                                <p class="package-desc">Temples dorés, plages paradisiaques et street food légendaire pour une aventure inoubliable.</p>
+                                <div class="package-footer">
+                                    <div class="package-price">
+                                        <span class="amount">649 $</span>
+                                    </div>
+                                    <a href="#" class="btn btn-book-modern">Réserver</a>
                                 </div>
                             </div>
                         </div>
@@ -264,50 +194,46 @@
                 </div>
             </div>
         </div>
-        <!-- Packages End -->
 
-        <!-- Tour Booking Start -->
         <div class="container-fluid booking py-5">
             <div class="container py-5">
                 <div class="row g-5 align-items-center">
-                    <div class="col-lg-6">
-                        <h5 class="section-booking-title pe-3">Booking</h5>
-                        <h1 class="text-white mb-4">Online Booking</h1>
-                        <p class="text-white mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur maxime ullam esse fuga blanditiis accusantium pariatur quis sapiente, veniam doloribus praesentium? Repudiandae iste voluptatem fugiat doloribus quasi quo iure officia.
-                        </p>
-                        <p class="text-white mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur maxime ullam esse fuga blanditiis accusantium pariatur quis sapiente, veniam doloribus praesentium? Repudiandae iste voluptatem fugiat doloribus quasi quo iure officia.
-                        </p>
-                        <a href="#" class="btn btn-light text-primary rounded-pill py-3 px-5 mt-2">En savoir plus</a>
+                    <div class="col-lg-6" data-aos="fade-right">
+                        <h5 class="section-booking-title pe-3">Réservation</h5>
+                        <h1 class="text-white mb-4">Réservez votre voyage de rêve</h1>
+                        <p class="text-white mb-4">Transformez vos rêves d'évasion en réalité grâce à une expérience de réservation simple et rapide.</p>
+                        <a href="#" class="btn btn-light text-primary rounded-pill py-3 px-5 mt-2">Voir tous les forfaits</a>
                     </div>
-                    <div class="col-lg-6">
-                        <h1 class="text-white mb-3">Book A Tour Deals</h1>
-                        <p class="text-white mb-4">Get <span class="text-warning">50% Off</span> On Your First Adventure Trip With Travela. Get More Deal Offers Here.</p>
+                    <div class="col-lg-6" data-aos="fade-left">
+                        <h1 class="text-white mb-3">Lancez votre aventure</h1>
+                        <p class="text-white mb-4">Obtenez <span class="text-warning">50% de réduction</span> sur une sélection de forfaits pour les nouveaux voyageurs. Offre limitée.</p>
                         <form>
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control bg-white border-0" id="name" placeholder="Your Name">
-                                        <label for="name">Your Name</label>
+                                        <input type="text" class="form-control bg-white border-0" id="name" placeholder="Votre nom">
+                                        <label for="name">Votre nom</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="email" class="form-control bg-white border-0" id="email" placeholder="Your Email">
-                                        <label for="email">Your Email</label>
+                                        <input type="email" class="form-control bg-white border-0" id="email" placeholder="Votre e-mail">
+                                        <label for="email">Votre e-mail</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating date" id="date3" data-target-input="nearest">
-                                        <input type="text" class="form-control bg-white border-0" id="datetime" placeholder="Date & Time" data-target="#date3" data-toggle="datetimepicker" />
-                                        <label for="datetime">Date & Time</label>
+                                        <input type="text" class="form-control bg-white border-0" id="datetime" placeholder="Date et heure" data-target="#date3" data-toggle="datetimepicker" />
+                                        <label for="datetime">Date et heure</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
                                         <select class="form-select bg-white border-0" id="select1">
-                                            <option value="1">Destination 1</option>
-                                            <option value="2">Destination 2</option>
-                                            <option value="3">Destination 3</option>
+                                            <option value="1">Italie - Venise</option>
+                                            <option value="2">USA - Californie</option>
+                                            <option value="3">Japon - Tokyo</option>
+                                            <option value="4">Thaïlande - Bangkok</option>
                                         </select>
                                         <label for="select1">Destination</label>
                                     </div>
@@ -315,32 +241,33 @@
                                 <div class="col-md-6">
                                     <div class="form-floating">
                                         <select class="form-select bg-white border-0" id="SelectPerson">
-                                            <option value="1">Persons 1</option>
-                                            <option value="2">Persons 2</option>
-                                            <option value="3">Persons 3</option>
+                                            <option value="1">1 personne</option>
+                                            <option value="2">2 personnes</option>
+                                            <option value="3">3 personnes</option>
+                                            <option value="4">4+ personnes</option>
                                         </select>
-                                        <label for="SelectPerson">Persons</label>
+                                        <label for="SelectPerson">Voyageurs</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
                                         <select class="form-select bg-white border-0" id="CategoriesSelect">
-                                            <option value="1">Kids</option>
-                                            <option value="2">1</option>
-                                            <option value="3">2</option>
-                                            <option value="3">3</option>
+                                            <option value="1">Standard</option>
+                                            <option value="2">Premium</option>
+                                            <option value="3">Luxe</option>
+                                            <option value="4">Affaires</option>
                                         </select>
-                                        <label for="CategoriesSelect">Categories</label>
+                                        <label for="CategoriesSelect">Type de forfait</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating">
-                                        <textarea class="form-control bg-white border-0" placeholder="Special Request" id="message" style="height: 100px"></textarea>
-                                        <label for="message">Special Request</label>
+                                        <textarea class="form-control bg-white border-0" placeholder="Demande spéciale" id="message" style="height: 100px"></textarea>
+                                        <label for="message">Demande spéciale</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <button class="btn btn-primary text-white w-100 py-3" type="submit">Réserver</button>
+                                    <button class="btn btn-primary text-white w-100 py-3" type="submit">Confirmer la réservation</button>
                                 </div>
                             </div>
                         </form>
@@ -348,16 +275,13 @@
                 </div>
             </div>
         </div>
-        <!-- Tour Booking End -->
-        
-        <!-- S'abonner Start -->
+
         <div class="container-fluid subscribe py-5">
             <div class="container text-center py-5">
                 <div class="mx-auto text-center" style="max-width: 900px;">
                     <h5 class="subscribe-title px-3">S'abonner</h5>
                     <h1 class="text-white mb-4">Notre newsletter</h1>
-                    <p class="text-white mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum tempore nam, architecto doloremque velit explicabo? Voluptate sunt eveniet fuga eligendi! Expedita laudantium fugiat corrupti eum cum repellat a laborum quasi.
-                    </p>
+                    <p class="text-white mb-5">Recevez des conseils voyage, des offres exclusives et des nouveautés directement dans votre boîte mail.</p>
                     <div class="position-relative mx-auto">
                         <input class="form-control border-primary rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Votre e-mail">
                         <button type="button" class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 px-4 mt-2 me-2">S'abonner</button>
@@ -365,16 +289,14 @@
                 </div>
             </div>
         </div>
-        <!-- S'abonner End -->
 
-        <!-- Footer Start -->
         <div class="container-fluid footer py-5">
             <div class="container py-5">
                 <div class="row g-5">
                     <div class="col-md-6 col-lg-6 col-xl-3">
                         <div class="footer-item d-flex flex-column">
-                            <h4 class="mb-4 text-white">Get In Touch</h4>
-                            <a href=""><i class="fas fa-home me-2"></i> 123 Street, New York, USA</a>
+                            <h4 class="mb-4 text-white">Contactez-nous</h4>
+                            <a href=""><i class="fas fa-home me-2"></i> 123 Rue, Paris, France</a>
                             <a href=""><i class="fas fa-envelope me-2"></i> info@example.com</a>
                             <a href=""><i class="fas fa-phone me-2"></i> +012 345 67890</a>
                             <a href="" class="mb-3"><i class="fas fa-print me-2"></i> +012 345 67890</a>
@@ -389,12 +311,12 @@
                     </div>
                     <div class="col-md-6 col-lg-6 col-xl-3">
                         <div class="footer-item d-flex flex-column">
-                            <h4 class="mb-4 text-white">Company</h4>
-                            <a href=""><i class="fas fa-angle-right me-2"></i> About</a>
-                            <a href=""><i class="fas fa-angle-right me-2"></i> Careers</a>
+                            <h4 class="mb-4 text-white">Entreprise</h4>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> À propos</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Carrières</a>
                             <a href=""><i class="fas fa-angle-right me-2"></i> Blog</a>
-                            <a href=""><i class="fas fa-angle-right me-2"></i> Press</a>
-                            <a href=""><i class="fas fa-angle-right me-2"></i> Gift Cards</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Presse</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Cartes cadeaux</a>
                             <a href=""><i class="fas fa-angle-right me-2"></i> Magazine</a>
                         </div>
                     </div>
@@ -402,11 +324,11 @@
                         <div class="footer-item d-flex flex-column">
                             <h4 class="mb-4 text-white">Support</h4>
                             <a href=""><i class="fas fa-angle-right me-2"></i> Contact</a>
-                            <a href=""><i class="fas fa-angle-right me-2"></i> Legal Notice</a>
-                            <a href=""><i class="fas fa-angle-right me-2"></i> Privacy Policy</a>
-                            <a href=""><i class="fas fa-angle-right me-2"></i> Terms and Conditions</a>
-                            <a href=""><i class="fas fa-angle-right me-2"></i> Sitemap</a>
-                            <a href=""><i class="fas fa-angle-right me-2"></i> Cookie policy</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Mentions légales</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Politique de confidentialité</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Conditions générales</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Plan du site</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Cookies</a>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-6 col-xl-3">
@@ -415,31 +337,30 @@
                                 <div class="col-xl-6">
                                     <form>
                                         <div class="form-floating">
-                                            <select class="form-select bg-dark border" id="select1">
-                                                <option value="1">Arabic</option>
-                                                <option value="2">German</option>
-                                                <option value="3">Greek</option>
-                                                <option value="3">New York</option>
+                                            <select class="form-select bg-dark border" id="select1" onchange="window.location.href=this.value">
+                                                <option value="1">Arabe</option>
+                                                <option value="2">Allemand</option>
+                                                <option value="3">Grec</option>
                                             </select>
-                                            <label for="select1">English</label>
+                                            <label for="select1">Français</label>
                                         </div>
                                     </form>
                                 </div>
                                 <div class="col-xl-6">
                                     <form>
                                         <div class="form-floating">
-                                            <select class="form-select bg-dark border" id="select1">
+                                            <select class="form-select bg-dark border" id="select1" onchange="window.location.href=this.value">
                                                 <option value="1">USD</option>
                                                 <option value="2">EUR</option>
                                                 <option value="3">INR</option>
-                                                <option value="3">GBP</option>
+                                                <option value="4">GBP</option>
                                             </select>
-                                            <label for="select1">$</label>
+                                            <label for="select1">€</label>
                                         </div>
                                     </form>
                                 </div>
                             </div>
-                            <h4 class="text-white mb-3">Payments</h4>
+                            <h4 class="text-white mb-3">Paiements</h4>
                             <div class="footer-bank-card">
                                 <a href="#" class="text-white me-2"><i class="fab fa-cc-amex fa-2x"></i></a>
                                 <a href="#" class="text-white me-2"><i class="fab fa-cc-visa fa-2x"></i></a>
@@ -453,41 +374,28 @@
                 </div>
             </div>
         </div>
-        <!-- Footer End -->
-        
-        <!-- Copyright Start -->
+
         <div class="container-fluid copyright text-body py-4">
             <div class="container">
                 <div class="row g-4 align-items-center">
                     <div class="col-md-6 text-center text-md-end mb-md-0">
-                        <i class="fas fa-copyright me-2"></i><a class="text-white" href="#">Your Site Name</a>, All right reserved.
+                        <i class="fas fa-copyright me-2"></i><a class="text-white" href="#">Rapture Holidays LLP</a>, Tous droits réservés.
                     </div>
                     <div class="col-md-6 text-center text-md-start">
-                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
-                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
-                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
                         Designed By <a class="text-white" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a href="https://themewagon.com">ThemeWagon</a>
-                    </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Copyright End -->
 
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
+        <a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square back-to-top"><i class="fa fa-arrow-up"></i></a>
 
-        
-        <!-- JavaScript Libraries -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
         <script src="../lib/easing/easing.min.js"></script>
         <script src="../lib/waypoints/waypoints.min.js"></script>
         <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
         <script src="../lib/lightbox/js/lightbox.min.js"></script>
-        
-
-        <!-- Template Javascript -->
         <script src="../js/main.js"></script>
     </body>
 
