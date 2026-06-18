@@ -3,10 +3,10 @@
 
     <head>
         <meta charset="utf-8">
-        <title>Travela - Tourism Website Template</title>
+        <title>Rapture Holidays LLP - Gallery</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="" name="keywords">
-        <meta content="" name="description">
+        <meta content="Rapture Holidays, Travel Gallery, Tourism Photos" name="keywords">
+        <meta content="Explore Rapture Holidays LLP travel gallery featuring stunning destinations, tours, and unforgettable experiences." name="description">
 
         <!-- Google Web Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,6 +16,9 @@
         <!-- Icon Font Stylesheet -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Animation Library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
         <!-- Libraries Stylesheet -->
         <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
@@ -50,86 +53,96 @@
                         <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-instagram fw-normal"></i></a>
                         <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href=""><i class="fab fa-youtube fw-normal"></i></a>
                     </div>
+<span class="topbar-divider"></span>
+                        <a href="mailto:info@raptureholidays.com" class="topbar-contact-item">
+                            <i class="fa fa-envelope me-1"></i>
+                            <span>info@raptureholidays.com</span>
+                        </a>
+                        <span class="topbar-divider"></span>
+                        <a href="#" class="topbar-contact-item">
+                            <i class="fa fa-map-marker-alt me-1"></i>
+                            <span>123 Ranking Street, New York, USA</span>
+                        </a>
                 </div>
                 <div class="col-lg-4 text-center text-lg-end">
-                    <div class="d-inline-flex align-items-center" style="height: 45px;">
-                        <a href="#"><small class="me-3 text-light"><i class="fa fa-user me-2"></i>Register</small></a>
-                        <a href="#"><small class="me-3 text-light"><i class="fa fa-sign-in-alt me-2"></i>Login</small></a>
-                        <div class="dropdown">
-                            <a href="#" class="dropdown-toggle text-light" data-bs-toggle="dropdown"><small><i class="fa fa-home me-2"></i> My Dashboard</small></a>
-                            <div class="dropdown-menu rounded">
-                                <a href="#" class="dropdown-item"><i class="fas fa-user-alt me-2"></i> My Profile</a>
-                                <a href="#" class="dropdown-item"><i class="fas fa-comment-alt me-2"></i> Inbox</a>
-                                <a href="#" class="dropdown-item"><i class="fas fa-bell me-2"></i> Notifications</a>
-                                <a href="#" class="dropdown-item"><i class="fas fa-cog me-2"></i> Account Settings</a>
-                                <a href="#" class="dropdown-item"><i class="fas fa-power-off me-2"></i> Log Out</a>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="d-inline-flex align-items-center" style="height: 45px;">                    <div class="d-inline-flex align-items-center" style="height: 45px;">
+                        <a href="tel:+919876543210" class="topbar-contact-item">
+                            <i class="fa fa-phone-alt me-1"></i>
+                            <span>+91 98765 43210</span>
+                        </a>
+                        <span class="topbar-divider"></span>
+                        <a href="#" class="topbar-contact-item">
+                            <i class="fa fa-clock me-1"></i>
+                            <span>Mon-Sat: 9AM-6PM</span>
+                        </a>
+                    </div></div>
                 </div>
             </div>
         </div>
         <!-- Topbar End -->
 
         <!-- Navbar & Hero Start -->
-        <div class="container-fluid position-relative p-0">
-            <nav class="navbar navbar-expand-lg navbar-light navbar-modern px-4 px-lg-5 py-3 py-lg-0">
-                <a href="index.html" class="navbar-brand p-0">
-                    <img src="img/Rapture%20Holidays%20%20%20LOGO%20%20.png" class="navbar-logo" alt="Rapture Holidays Logo">
-
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="fa fa-bars"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto py-0">
-                        <a href="index.html" class="nav-item nav-link">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="services.html" class="nav-item nav-link">Services</a>
-                        <a href="packages.html" class="nav-item nav-link">Packages</a>
-                        <a href="blog.html" class="nav-item nav-link">Blog</a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
-                            <div class="dropdown-menu m-0">
-                                <a href="destination.html" class="dropdown-item">Destination</a>
-                                <a href="tour.html" class="dropdown-item">Explore Tour</a>
-                                <a href="booking.html" class="dropdown-item">Travel Booking</a>
-                                <a href="gallery.html" class="dropdown-item active">Our Gallery</a>
-                                <a href="guides.html" class="dropdown-item">Travel Guides</a>
-                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                                <a href="404.html" class="dropdown-item">404 Page</a>
+        <div class="container-fluid position-relative p-0 hero-static" data-aos="fade-in">
+            <nav class="navbar navbar-expand-lg navbar-modern-sticky px-4 px-lg-5 py-2 py-lg-3">
+                <div class="container-fluid">
+                    <a href="index.html" class="navbar-brand p-0">
+                        <img src="img/Rapture%20Holidays%20%20%20LOGO%20%20.png" class="navbar-logo-enlarged" alt="Rapture Holidays Logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav ms-auto py-0">
+                            <a href="index.html" class="nav-item nav-link">Home</a>
+                            <a href="about.html" class="nav-item nav-link">About</a>
+                            <a href="services.html" class="nav-item nav-link">Services</a>
+                            <a href="packages.html" class="nav-item nav-link">Packages</a>
+                            <a href="jain.html" class="nav-item nav-link">Jain Tours</a>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                                <div class="dropdown-menu m-0">
+                                    <a href="destination.html" class="dropdown-item">Destination</a>
+                                    <a href="tour.html" class="dropdown-item">Explore Tour</a>
+                                    <a href="booking.html" class="dropdown-item">Travel Booking</a>
+                                    <a href="gallery.html" class="dropdown-item active">Our Gallery</a>
+                                    <a href="guides.html" class="dropdown-item">Travel Guides</a>
+                                    <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                    <a href="404.html" class="dropdown-item">404 Page</a>
+                                    <a href="jain.html" class="dropdown-item">Jain Tours</a>
+                                </div>
                             </div>
+                            <a href="contact.html" class="nav-item nav-link">Contact</a>
                         </div>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
-                    <a href="" class="btn btn-primary rounded-pill py-2 px-4 ms-lg-4">Book Now</a>
                 </div>
             </nav>
+
+            <div class="hero-static-inner">
+                <img src="img/carousel-2.jpg" class="img-fluid" alt="Gallery Hero">
+                <div class="hero-static-overlay"></div>
+                <div class="hero-static-content text-center">
+                    <span class="hero-eyebrow">Travel Gallery</span>
+                    <h4 class="text-white text-uppercase fw-bold mb-3 hero-title" style="letter-spacing: 3px;">Our Gallery</h4>
+                    <h1 class="display-2 text-capitalize text-white mb-4 hero-title">Capture the Beauty of Every Journey</h1>
+                    <p class="mb-5 fs-5 text-white">Explore unforgettable destinations, experiences, and travel moments curated by Rapture Holidays LLP.</p>
+                    <div class="d-flex align-items-center justify-content-center gap-3 flex-wrap">
+                        <a class="btn btn-primary btn-modern rounded-pill text-white py-3 px-5 hero-btn-primary" href="#gallery">View Gallery</a>
+                        <a class="btn btn-light btn-modern rounded-pill text-primary fw-semibold py-3 px-5 hero-btn-secondary" href="contact.html">Plan Your Trip</a>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- Navbar & Hero End -->
 
-        <!-- Header Start -->
-        <div class="container-fluid bg-breadcrumb">
-            <div class="container text-center py-5" style="max-width: 900px;">
-                <h3 class="text-white display-3 mb-4">Our Gallery</h1>
-                <ol class="breadcrumb justify-content-center mb-0">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                    <li class="breadcrumb-item active text-white">Gallery</li>
-                </ol>    
-            </div>
-        </div>
-        <!-- Header End -->
 
         <!-- Gallery Start -->
-        <div class="container-fluid gallery py-5 my-5">
-            <div class="mx-auto text-center mb-5" style="max-width: 900px;">
-                <h5 class="section-title px-3">Our Gallery</h5>
-                <h1 class="mb-4">Tourism & Traveling Gallery.</h1>
-                <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum tempore nam, architecto doloremque velit explicabo? Voluptate sunt eveniet fuga eligendi! Expedita laudantium fugiat corrupti eum cum repellat a laborum quasi.
-                </p>
+        <div id="gallery" class="container-fluid gallery py-5 my-5">
+            <div class="mx-auto text-center mb-5" style="max-width: 900px;" data-aos="fade-up">
+                <h5 class="section-title px-3 section-title-modern">Our Gallery</h5>
+                <h1 class="mb-4">Tourism & Traveling Gallery</h1>
+                <p class="mb-0">Explore our handpicked collection of stunning travel photographs showcasing the beauty of destinations we offer.</p>
             </div>
-            <div class="tab-class text-center">
+            <div class="tab-class text-center" data-aos="fade-up" data-aos-delay="200">
                 <ul class="nav nav-pills d-inline-flex justify-content-center mb-5">
                     <li class="nav-item">
                         <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill active" data-bs-toggle="pill" href="#GalleryTab-1">
@@ -435,35 +448,46 @@
         </div>
         <!-- Gallery End -->
 
-        <!-- Subscribe Start -->
-        <div class="container-fluid subscribe py-5">
-            <div class="container text-center py-5">
-                <div class="mx-auto text-center" style="max-width: 900px;">
-                    <h5 class="subscribe-title px-3">Subscribe</h5>
-                    <h1 class="text-white mb-4">Our Newsletter</h1>
-                    <p class="text-white mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum tempore nam, architecto doloremque velit explicabo? Voluptate sunt eveniet fuga eligendi! Expedita laudantium fugiat corrupti eum cum repellat a laborum quasi.
-                    </p>
-                    <div class="position-relative mx-auto">
-                        <input class="form-control border-primary rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                        <button type="button" class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 px-4 mt-2 me-2">Subscribe</button>
+        <!-- Tour Booking Start -->
+        <div class="container-fluid booking py-5">
+            <div class="container py-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+                        <h5 class="section-booking-title section-title-modern pe-3 mb-3">Booking</h5>
+                        <h1 class="text-white mb-4">Online Booking Made Easy</h1>
+                        <p class="text-white mb-4">Book your dream vacation in just a few clicks with our streamlined online booking system.</p>
+                        <p class="text-white mb-4">Get <span class="text-warning">exclusive discounts</span> on early bookings and seasonal offers.</p>
+                        <a href="booking.html" class="btn btn-light text-primary rounded-pill py-3 px-5 mt-2 btn-modern">Book Now</a>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-left" data-aos-delay="400">
+                        <div class="booking-whatsapp-card text-center">
+                            <div class="whatsapp-icon-circle">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <h2 class="mt-3 mb-2">Book Instantly on WhatsApp</h2>
+                            <p class="mb-4">Chat with our travel experts, confirm dates, and book your trip in minutes.</p>
+                            <a class="whatsapp-btn" href="https://wa.me/1234567890" target="_blank" rel="noopener">
+                                <i class="fab fa-whatsapp me-2"></i> Chat Now
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Subscribe End -->
+        <!-- Tour Booking End -->
 
         <!-- Footer Start -->
-        <div class="container-fluid footer py-5">
+        <div class="container-fluid footer py-5 footer-modern">
             <div class="container py-5">
                 <div class="row g-5">
-                    <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="col-md-6 col-lg-6 col-xl-3" data-aos="fade-up" data-aos-delay="100">
                         <div class="footer-item d-flex flex-column">
                             <h4 class="mb-4 text-white">Get In Touch</h4>
-                            <a href=""><i class="fas fa-home me-2"></i> 123 Street, New York, USA</a>
-                            <a href=""><i class="fas fa-envelope me-2"></i> info@example.com</a>
-                            <a href=""><i class="fas fa-phone me-2"></i> +012 345 67890</a>
-                            <a href="" class="mb-3"><i class="fas fa-print me-2"></i> +012 345 67890</a>
-                            <div class="d-flex align-items-center">
+                            <a href="" class="footer-link mb-2"><i class="fas fa-home me-2"></i> 123 Street, New York, USA</a>
+                            <a href="" class="footer-link mb-2"><i class="fas fa-envelope me-2"></i> info@travela.com</a>
+                            <a href="" class="footer-link mb-2"><i class="fas fa-phone me-2"></i> +012 345 67890</a>
+                            <a href="" class="footer-link mb-4"><i class="fas fa-print me-2"></i> +012 345 67890</a>
+                            <div class="d-flex align-items-center mt-3">
                                 <i class="fas fa-share fa-2x text-white me-2"></i>
                                 <a class="btn-square btn btn-primary rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
                                 <a class="btn-square btn btn-primary rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
@@ -472,54 +496,51 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="col-md-6 col-lg-6 col-xl-3" data-aos="fade-up" data-aos-delay="200">
                         <div class="footer-item d-flex flex-column">
                             <h4 class="mb-4 text-white">Company</h4>
-                            <a href=""><i class="fas fa-angle-right me-2"></i> About</a>
-                            <a href=""><i class="fas fa-angle-right me-2"></i> Careers</a>
-                            <a href=""><i class="fas fa-angle-right me-2"></i> Blog</a>
-                            <a href=""><i class="fas fa-angle-right me-2"></i> Press</a>
-                            <a href=""><i class="fas fa-angle-right me-2"></i> Gift Cards</a>
-                            <a href=""><i class="fas fa-angle-right me-2"></i> Magazine</a>
+                            <a href="" class="footer-link mb-2"><i class="fas fa-angle-right me-2"></i> About</a>
+                            <a href="" class="footer-link mb-2"><i class="fas fa-angle-right me-2"></i> Careers</a>
+                            <a href="" class="footer-link mb-2"><i class="fas fa-angle-right me-2"></i> Press</a>
+                            <a href="" class="footer-link mb-2"><i class="fas fa-angle-right me-2"></i> Gift Cards</a>
+                            <a href="" class="footer-link mb-2"><i class="fas fa-angle-right me-2"></i> Magazine</a>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="col-md-6 col-lg-6 col-xl-3" data-aos="fade-up" data-aos-delay="300">
                         <div class="footer-item d-flex flex-column">
                             <h4 class="mb-4 text-white">Support</h4>
-                            <a href=""><i class="fas fa-angle-right me-2"></i> Contact</a>
-                            <a href=""><i class="fas fa-angle-right me-2"></i> Legal Notice</a>
-                            <a href=""><i class="fas fa-angle-right me-2"></i> Privacy Policy</a>
-                            <a href=""><i class="fas fa-angle-right me-2"></i> Terms and Conditions</a>
-                            <a href=""><i class="fas fa-angle-right me-2"></i> Sitemap</a>
-                            <a href=""><i class="fas fa-angle-right me-2"></i> Cookie policy</a>
+                            <a href="" class="footer-link mb-2"><i class="fas fa-angle-right me-2"></i> Contact</a>
+                            <a href="" class="footer-link mb-2"><i class="fas fa-angle-right me-2"></i> Legal Notice</a>
+                            <a href="" class="footer-link mb-2"><i class="fas fa-angle-right me-2"></i> Privacy Policy</a>
+                            <a href="" class="footer-link mb-2"><i class="fas fa-angle-right me-2"></i> Terms and Conditions</a>
+                            <a href="" class="footer-link mb-2"><i class="fas fa-angle-right me-2"></i> Sitemap</a>
+                            <a href="" class="footer-link mb-2"><i class="fas fa-angle-right me-2"></i> Cookie policy</a>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="col-md-6 col-lg-6 col-xl-3" data-aos="fade-up" data-aos-delay="400">
                         <div class="footer-item">
                             <div class="row gy-3 gx-2 mb-4">
                                 <div class="col-xl-6">
                                     <form>
                                         <div class="form-floating">
                                             <select class="form-select bg-dark border" id="select1" onchange="window.location.href=this.value">
-                                                <option value="1">Arabic</option>
-                                                <option value="2">German</option>
-                                                <option value="3">Greek</option>
-                                                <option value="3">New York</option>
+                                                <option value="index.html">English</option>
+                                                <option value="index.html">Spanish</option>
+                                                <option value="fr/index.html">French</option>
                                             </select>
-                                            <label for="select1">English</label>
+                                            <label for="select1" class="text-white">Language</label>
                                         </div>
                                     </form>
                                 </div>
                                 <div class="col-xl-6">
                                     <form>
                                         <div class="form-floating">
-                                            <select class="form-select bg-dark border" id="select1" onchange="window.location.href=this.value">
+                                            <select class="form-select bg-dark border" id="select2">
                                                 <option value="1">USD</option>
                                                 <option value="2">EUR</option>
                                                 <option value="3">INR</option>
-                                                <option value="3">GBP</option>
                                             </select>
-                                            <label for="select1">$</label>
+                                            <label for="select2" class="text-white">Currency</label>
                                         </div>
                                     </form>
                                 </div>
@@ -545,14 +566,10 @@
             <div class="container">
                 <div class="row g-4 align-items-center">
                     <div class="col-md-6 text-center text-md-end mb-md-0">
-                        <i class="fas fa-copyright me-2"></i><a class="text-white" href="#">Your Site Name</a>, All right reserved.
+                        <i class="fas fa-copyright me-2"></i><a class="text-white" href="#">Rapture Holidays LLP</a>, All right reserved.
                     </div>
                     <div class="col-md-6 text-center text-md-start">
-                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
-                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
-                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
                         Designed By <a class="text-white" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a href="https://themewagon.com">ThemeWagon</a>
-                    </div>
                     </div>
                 </div>
             </div>
@@ -560,20 +577,30 @@
         <!-- Copyright End -->
 
         <!-- Back to Top -->
-        <a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
+        <a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square back-to-top"><i class="fa fa-arrow-up"></i></a>
 
         
         <!-- JavaScript Libraries -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="lib/easing/easing.min.js"></script>
         <script src="lib/waypoints/waypoints.min.js"></script>
         <script src="lib/owlcarousel/owl.carousel.min.js"></script>
         <script src="lib/lightbox/js/lightbox.min.js"></script>
-        
 
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
+
+        <script>
+            AOS.init({
+                duration: 900,
+                easing: 'ease-in-out',
+                once: true,
+                offset: 80,
+                mirror: false
+            });
+        </script>
     </body>
 
 </html>
